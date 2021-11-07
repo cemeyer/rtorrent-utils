@@ -1,0 +1,20 @@
+[package]
+name = "rtorrent-utils"
+description = "Rtorrent XMLRPC API utilities"
+repository = "https://github.com/cemeyer/rtorrent-utils"
+categories = ["command-line-interface"]
+keywords = ["rtorrent", "xmlrpc", "rpc", "remote", "control"]
+license = "MIT"
+version = "1.0.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rtorrent-xmlrpc-bindings = "1.0.2"
+shellexpand = "2.1.0"
+url = "2.2.2"
+
+[[bin]]
+name = "rtorrent_remove_unregistered"
+path = "src/remove_unregistered.rs"
